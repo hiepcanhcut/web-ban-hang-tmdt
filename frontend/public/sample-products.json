@@ -1,0 +1,321 @@
+{
+  "products": [
+    {
+      "_id": "prod_001",
+      "name": "Wireless Headphones Pro X",
+      "slug": "wireless-headphones-pro-x",
+      "price": 2490000,
+      "salePrice": 2241000,
+      "category": "Electronics",
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1524678714210-9917a6c619c2?w=500&h=500&fit=crop"
+      ],
+      "rating": 4.6,
+      "reviewsCount": 128,
+      "stock": 25,
+      "isOnSale": true,
+      "isNew": false,
+      "description": "Premium wireless headphones with active noise cancellation, 30-hour battery life, and superior sound quality. Perfect for music lovers and professionals.",
+      "specifications": {
+        "battery": "30 hours",
+        "connectivity": "Bluetooth 5.0",
+        "noiseCancellation": true,
+        "weight": "250g"
+      }
+    },
+    {
+      "_id": "prod_002",
+      "name": "Mechanical Keyboard Dark TKL",
+      "slug": "mechanical-keyboard-dark-tkl",
+      "price": 1890000,
+      "salePrice": null,
+      "category": "Electronics",
+      "images": [
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500&h=500&fit=crop"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 96,
+      "stock": 18,
+      "isOnSale": false,
+      "isNew": false,
+      "description": "Tenkeyless mechanical keyboard with Cherry MX switches, RGB backlighting, and premium aluminum frame. Ideal for gaming and typing.",
+      "specifications": {
+        "switches": "Cherry MX Blue",
+        "backlight": "RGB",
+        "connection": "USB-C",
+        "layout": "TKL (75%)"
+      }
+    },
+    {
+      "_id": "prod_003",
+      "name": "Smart Watch Night Edition",
+      "slug": "smart-watch-night-edition",
+      "price": 3290000,
+      "salePrice": null,
+      "category": "Electronics",
+      "images": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=500&h=500&fit=crop"
+      ],
+      "rating": 4.5,
+      "reviewsCount": 210,
+      "stock": 32,
+      "isOnSale": false,
+      "isNew": true,
+      "description": "Advanced smartwatch with OLED display, health monitoring, GPS tracking, and 7-day battery life. Sleek black design perfect for any outfit.",
+      "specifications": {
+        "display": "1.4\" OLED",
+        "battery": "7 days",
+        "sensors": "Heart rate, GPS, Accelerometer",
+        "waterResistance": "50m"
+      }
+    },
+    {
+      "_id": "prod_004",
+      "name": "Minimal Black Hoodie",
+      "slug": "minimal-black-hoodie",
+      "price": 690000,
+      "salePrice": null,
+      "category": "Fashion",
+      "images": [
+        "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop&crop=face"
+      ],
+      "rating": 4.7,
+      "reviewsCount": 74,
+      "stock": 45,
+      "isOnSale": false,
+      "isNew": false,
+      "description": "Premium cotton hoodie with minimalist design, comfortable fit, and durable construction. Perfect for casual wear and layering.",
+      "specifications": {
+        "material": "100% Cotton",
+        "fit": "Regular",
+        "care": "Machine wash",
+        "origin": "Vietnam"
+      }
+    },
+    {
+      "_id": "prod_005",
+      "name": "Dark Leather Backpack",
+      "slug": "dark-leather-backpack",
+      "price": 1250000,
+      "salePrice": 1000000,
+      "category": "Fashion",
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1622260613186-01c1c0ab05d6?w=500&h=500&fit=crop"
+      ],
+      "rating": 4.4,
+      "reviewsCount": 52,
+      "stock": 12,
+      "isOnSale": true,
+      "isNew": false,
+      "description": "Genuine leather backpack with multiple compartments, water-resistant coating, and adjustable straps. Timeless design for daily use.",
+      "specifications": {
+        "material": "Genuine Leather",
+        "capacity": "25L",
+        "compartments": "3 main + 2 pockets",
+        "waterproof": "Yes"
+      }
+    },
+    {
+      "_id": "prod_006",
+      "name": "Matte Black Water Bottle",
+      "slug": "matte-black-water-bottle",
+      "price": 320000,
+      "salePrice": null,
+      "category": "Accessories",
+      "images": [
+        "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1544007459-9d829b0497c7?w=500&h=500&fit=crop"
+      ],
+      "rating": 4.3,
+      "reviewsCount": 39,
+      "stock": 67,
+      "isOnSale": false,
+      "isNew": false,
+      "description": "Insulated stainless steel water bottle with matte black finish, keeps drinks cold for 24 hours or hot for 12 hours.",
+      "specifications": {
+        "capacity": "500ml",
+        "material": "Stainless Steel 304",
+        "insulation": "Double wall",
+        "lifetime": "5 years"
+      }
+    },
+    {
+      "_id": "prod_007",
+      "name": "Desk Lamp Ambient Light",
+      "slug": "desk-lamp-ambient-light",
+      "price": 540000,
+      "salePrice": null,
+      "category": "Accessories",
+      "images": [
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop"
+      ],
+      "rating": 4.6,
+      "reviewsCount": 61,
+      "stock": 28,
+      "isOnSale": false,
+      "isNew": true,
+      "description": "Modern LED desk lamp with adjustable brightness, color temperature, and USB charging port. Perfect for work and study.",
+      "specifications": {
+        "brightness": "300-1200 lumens",
+        "colorTemp": "2700K-6500K",
+        "power": "12W LED",
+        "features": "USB port, Touch control"
+      }
+    },
+    {
+      "_id": "prod_008",
+      "name": "Premium Coffee Maker",
+      "slug": "premium-coffee-maker",
+      "price": 890000,
+      "salePrice": 712000,
+      "category": "Electronics",
+      "images": [
+        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1459755486867-b55449bb39ff?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500&h=500&fit=crop"
+      ],
+      "rating": 4.7,
+      "reviewsCount": 89,
+      "stock": 15,
+      "isOnSale": true,
+      "isNew": false,
+      "description": "Professional drip coffee maker with thermal carafe, programmable timer, and gold-tone filter. Brews up to 12 cups.",
+      "specifications": {
+        "capacity": "12 cups",
+        "features": "Programmable, Thermal carafe",
+        "power": "1200W",
+        "warranty": "2 years"
+      }
+    },
+    {
+      "_id": "prod_009",
+      "name": "Wireless Charging Pad",
+      "slug": "wireless-charging-pad",
+      "price": 290000,
+      "salePrice": null,
+      "category": "Electronics",
+      "images": [
+        "https://images.unsplash.com/photo-1609592806500-1b6b8b8b8b8b?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1625842268584-8f3296236761?w=500&h=500&fit=crop"
+      ],
+      "rating": 4.4,
+      "reviewsCount": 156,
+      "stock": 0,
+      "isOnSale": false,
+      "isNew": false,
+      "description": "Fast wireless charging pad compatible with all Qi-enabled devices. Sleek design with LED indicator and overheat protection.",
+      "specifications": {
+        "charging": "10W fast charge",
+        "compatibility": "Qi standard",
+        "safety": "Overheat protection",
+        "indicator": "LED light"
+      }
+    },
+    {
+      "_id": "prod_010",
+      "name": "Minimalist Watch",
+      "slug": "minimalist-watch",
+      "price": 450000,
+      "salePrice": null,
+      "category": "Fashion",
+      "images": [
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=500&h=500&fit=crop"
+      ],
+      "rating": 4.5,
+      "reviewsCount": 43,
+      "stock": 22,
+      "isOnSale": false,
+      "isNew": true,
+      "description": "Classic minimalist watch with leather strap, Japanese movement, and water-resistant design. Timeless elegance for everyday wear.",
+      "specifications": {
+        "movement": "Japanese quartz",
+        "strap": "Genuine leather",
+        "water": "30m resistant",
+        "case": "Stainless steel"
+      }
+    },
+    {
+      "_id": "prod_011",
+      "name": "Ceramic Plant Pot Set",
+      "slug": "ceramic-plant-pot-set",
+      "price": 180000,
+      "salePrice": null,
+      "category": "Accessories",
+      "images": [
+        "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1545241047-6083a3684587?w=500&h=500&fit=crop"
+      ],
+      "rating": 4.2,
+      "reviewsCount": 28,
+      "stock": 41,
+      "isOnSale": false,
+      "isNew": false,
+      "description": "Set of 3 ceramic plant pots in matte finish with drainage holes. Perfect for indoor plants and modern home decor.",
+      "specifications": {
+        "material": "Ceramic",
+        "set": "3 pots",
+        "sizes": "Small, Medium, Large",
+        "drainage": "Built-in holes"
+      }
+    },
+    {
+      "_id": "prod_012",
+      "name": "Portable Bluetooth Speaker",
+      "slug": "portable-bluetooth-speaker",
+      "price": 650000,
+      "salePrice": 520000,
+      "category": "Electronics",
+      "images": [
+        "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500&h=500&fit=crop",
+        "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&h=500&fit=crop"
+      ],
+      "rating": 4.3,
+      "reviewsCount": 134,
+      "stock": 19,
+      "isOnSale": true,
+      "isNew": false,
+      "description": "Compact Bluetooth speaker with 360-degree sound, waterproof design, and 12-hour battery life. Perfect for outdoor activities.",
+      "specifications": {
+        "battery": "12 hours",
+        "waterproof": "IPX7",
+        "connectivity": "Bluetooth 5.0",
+        "sound": "360° surround"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "name": "Electronics",
+      "slug": "electronics",
+      "description": "Latest gadgets and electronic devices"
+    },
+    {
+      "name": "Fashion",
+      "slug": "fashion",
+      "description": "Clothing and fashion accessories"
+    },
+    {
+      "name": "Accessories",
+      "slug": "accessories",
+      "description": "Home and lifestyle accessories"
+    }
+  ]
+}

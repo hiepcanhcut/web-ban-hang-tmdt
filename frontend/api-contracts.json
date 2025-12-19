@@ -1,0 +1,347 @@
+{
+  "apiContracts": {
+    "auth": {
+      "register": {
+        "endpoint": "POST /api/auth/register",
+        "request": {
+          "name": "John Doe",
+          "email": "john@example.com",
+          "password": "password123"
+        },
+        "response": {
+          "success": true,
+          "message": "User registered successfully",
+          "user": {
+            "_id": "user_id",
+            "name": "John Doe",
+            "email": "john@example.com",
+            "role": "user"
+          },
+          "token": "jwt_token_here"
+        },
+        "errors": {
+          "400": "Validation error",
+          "409": "User already exists"
+        }
+      },
+      "login": {
+        "endpoint": "POST /api/auth/login",
+        "request": {
+          "email": "john@example.com",
+          "password": "password123"
+        },
+        "response": {
+          "success": true,
+          "user": {
+            "_id": "user_id",
+            "name": "John Doe",
+            "email": "john@example.com",
+            "role": "user"
+          },
+          "token": "jwt_token_here"
+        },
+        "errors": {
+          "401": "Invalid credentials"
+        }
+      }
+    },
+    "products": {
+      "getAll": {
+        "endpoint": "GET /api/products",
+        "queryParams": {
+          "page": 1,
+          "limit": 10,
+          "category": "electronics",
+          "minPrice": 0,
+          "maxPrice": 1000,
+          "rating": 4,
+          "sort": "price_asc"
+        },
+        "response": {
+          "success": true,
+          "products": [
+            {
+              "_id": "product_id",
+              "name": "Wireless Headphones",
+              "description": "High-quality wireless headphones",
+              "price": 99.99,
+              "originalPrice": 129.99,
+              "category": "electronics",
+              "images": ["image_url_1", "image_url_2"],
+              "rating": 4.5,
+              "reviews": 128,
+              "stock": 50,
+              "variants": {
+                "sizes": ["S", "M", "L"],
+                "colors": ["Black", "White", "Blue"]
+              },
+              "isOnSale": true,
+              "discount": 23
+            }
+          ],
+          "pagination": {
+            "page": 1,
+            "limit": 10,
+            "total": 100,
+            "pages": 10
+          }
+        }
+      },
+      "getById": {
+        "endpoint": "GET /api/products/:id",
+        "response": {
+          "success": true,
+          "product": {
+            "_id": "product_id",
+            "name": "Wireless Headphones",
+            "description": "High-quality wireless headphones with noise cancellation",
+            "price": 99.99,
+            "originalPrice": 129.99,
+            "category": "electronics",
+            "images": ["image_url_1", "image_url_2", "image_url_3"],
+            "rating": 4.5,
+            "reviews": [
+              {
+                "_id": "review_id",
+                "user": {
+                  "_id": "user_id",
+                  "name": "John Doe"
+                },
+                "rating": 5,
+                "comment": "Great product!",
+                "createdAt": "2024-01-01T00:00:00.000Z"
+              }
+            ],
+            "stock": 50,
+            "variants": {
+              "sizes": ["S", "M", "L"],
+              "colors": ["Black", "White", "Blue"]
+            },
+            "isOnSale": true,
+            "discount": 23,
+            "specifications": {
+              "battery": "30 hours",
+              "connectivity": "Bluetooth 5.0"
+            }
+          }
+        },
+        "errors": {
+          "404": "Product not found"
+        }
+      }
+    },
+    "cart": {
+      "getCart": {
+        "endpoint": "GET /api/cart",
+        "headers": {
+          "Authorization": "Bearer jwt_token"
+        },
+        "response": {
+          "success": true,
+          "cart": {
+            "_id": "cart_id",
+            "user": "user_id",
+            "items": [
+              {
+                "_id": "cart_item_id",
+                "product": {
+                  "_id": "product_id",
+                  "name": "Wireless Headphones",
+                  "price": 99.99,
+                  "image": "image_url"
+                },
+                "quantity": 2,
+                "size": "M",
+                "color": "Black"
+              }
+            ],
+            "total": 199.98
+          }
+        }
+      },
+      "addToCart": {
+        "endpoint": "POST /api/cart",
+        "headers": {
+          "Authorization": "Bearer jwt_token"
+        },
+        "request": {
+          "productId": "product_id",
+          "quantity": 1,
+          "size": "M",
+          "color": "Black"
+        },
+        "response": {
+          "success": true,
+          "message": "Product added to cart",
+          "cart": {
+            "_id": "cart_id",
+            "items": [],
+            "total": 99.99
+          }
+        }
+      },
+      "updateQuantity": {
+        "endpoint": "PUT /api/cart/:itemId",
+        "headers": {
+          "Authorization": "Bearer jwt_token"
+        },
+        "request": {
+          "quantity": 3
+        },
+        "response": {
+          "success": true,
+          "message": "Cart updated",
+          "cart": {
+            "_id": "cart_id",
+            "items": [],
+            "total": 299.97
+          }
+        }
+      },
+      "removeFromCart": {
+        "endpoint": "DELETE /api/cart/:itemId",
+        "headers": {
+          "Authorization": "Bearer jwt_token"
+        },
+        "response": {
+          "success": true,
+          "message": "Item removed from cart"
+        }
+      }
+    },
+    "orders": {
+      "createOrder": {
+        "endpoint": "POST /api/orders",
+        "headers": {
+          "Authorization": "Bearer jwt_token"
+        },
+        "request": {
+          "shippingAddress": {
+            "name": "John Doe",
+            "address": "123 Main St",
+            "city": "New York",
+            "state": "NY",
+            "zipCode": "10001",
+            "country": "USA"
+          },
+          "paymentMethod": "credit_card",
+          "paymentDetails": {
+            "cardNumber": "**** **** **** 1234",
+            "expiryDate": "12/25",
+            "cvv": "***"
+          }
+        },
+        "response": {
+          "success": true,
+          "order": {
+            "_id": "order_id",
+            "user": "user_id",
+            "items": [],
+            "total": 199.98,
+            "status": "pending",
+            "createdAt": "2024-01-01T00:00:00.000Z"
+          }
+        }
+      },
+      "getUserOrders": {
+        "endpoint": "GET /api/orders",
+        "headers": {
+          "Authorization": "Bearer jwt_token"
+        },
+        "response": {
+          "success": true,
+          "orders": [
+            {
+              "_id": "order_id",
+              "items": [],
+              "total": 199.98,
+              "status": "delivered",
+              "createdAt": "2024-01-01T00:00:00.000Z"
+            }
+          ]
+        }
+      }
+    },
+    "payments": {
+      "processPayment": {
+        "endpoint": "POST /api/payments",
+        "headers": {
+          "Authorization": "Bearer jwt_token"
+        },
+        "request": {
+          "orderId": "order_id",
+          "amount": 199.98,
+          "paymentMethod": "vnpay",
+          "returnUrl": "http://localhost:3000/payment/success"
+        },
+        "response": {
+          "success": true,
+          "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/...",
+          "transactionId": "transaction_id"
+        }
+      },
+      "verifyPayment": {
+        "endpoint": "GET /api/payments/verify",
+        "queryParams": {
+          "vnp_ResponseCode": "00",
+          "vnp_TransactionNo": "transaction_no"
+        },
+        "response": {
+          "success": true,
+          "message": "Payment verified successfully",
+          "order": {
+            "_id": "order_id",
+            "status": "paid"
+          }
+        }
+      }
+    },
+    "admin": {
+      "getDashboardStats": {
+        "endpoint": "GET /api/admin/stats",
+        "headers": {
+          "Authorization": "Bearer jwt_token"
+        },
+        "response": {
+          "success": true,
+          "stats": {
+            "totalRevenue": 50000,
+            "totalOrders": 500,
+            "totalProducts": 100,
+            "totalUsers": 1000,
+            "monthlyRevenue": [1000, 1200, 1500, 1800, 2000],
+            "recentOrders": []
+          }
+        }
+      },
+      "getAllProducts": {
+        "endpoint": "GET /api/admin/products",
+        "headers": {
+          "Authorization": "Bearer jwt_token"
+        },
+        "response": {
+          "success": true,
+          "products": []
+        }
+      },
+      "createProduct": {
+        "endpoint": "POST /api/admin/products",
+        "headers": {
+          "Authorization": "Bearer jwt_token"
+        },
+        "request": {
+          "name": "New Product",
+          "description": "Product description",
+          "price": 29.99,
+          "category": "category",
+          "stock": 100,
+          "images": ["image_url"]
+        },
+        "response": {
+          "success": true,
+          "product": {}
+        }
+      }
+    }
+  }
+}
